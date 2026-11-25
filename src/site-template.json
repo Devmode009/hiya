@@ -1,0 +1,1155 @@
+{
+  "version": "1.0",
+  "approval": "DRAFT — source wording and engineering criteria need client confirmation",
+  "points": {
+    "separateLedgers": true,
+    "work": {
+      "defaultSiteAllocation": 1000,
+      "deductOn": "manager_approval",
+      "stageWeights": {
+        "Civil work": 400,
+        "DC work": 200,
+        "AC work": 150,
+        "MMS & modules": 250
+      },
+      "quantityFactor": {
+        "full": 1,
+        "half": 0.5,
+        "quarter": 0.25
+      }
+    },
+    "quality": {
+      "initial": 100,
+      "min": 0,
+      "max": 100,
+      "proposedPenalties": {
+        "low": 1,
+        "medium": 3,
+        "high": 5,
+        "critical": 10
+      },
+      "deductOn": "verified_defect",
+      "restoreOn": "separately_approved_adjustment"
+    }
+  },
+  "stages": [
+    {
+      "name": "Civil work",
+      "progress": 84,
+      "tasks": 47,
+      "icon": "foundation",
+      "children": [
+        {
+          "name": "Pile foundation",
+          "tasks": [
+            {
+              "id": "civil-work-pile-foundation-1",
+              "name": "Survey marking",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-pile-foundation-2",
+              "name": "Drilling",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-pile-foundation-3",
+              "name": "Alignment",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-pile-foundation-4",
+              "name": "Casting",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-pile-foundation-5",
+              "name": "Pile cap",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-pile-foundation-6",
+              "name": "Curing",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-pile-foundation-7",
+              "name": "Material team readiness",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        },
+        {
+          "name": "Control room",
+          "tasks": [
+            {
+              "id": "civil-work-control-room-1",
+              "name": "Excavation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-2",
+              "name": "PCC",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-3",
+              "name": "Bar bending",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-4",
+              "name": "Column post foundation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-5",
+              "name": "Backfilling",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-6",
+              "name": "Beam",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-7",
+              "name": "Brick work — lower course",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-8",
+              "name": "Plinth",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-9",
+              "name": "Brick work — upper course",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-10",
+              "name": "Roof",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-11",
+              "name": "Parapet wall",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-12",
+              "name": "Weathering course",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-13",
+              "name": "Electrical fittings",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-14",
+              "name": "Plastering steps",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-15",
+              "name": "Painting",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-control-room-16",
+              "name": "Stairs",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        },
+        {
+          "name": "Inverter foundation",
+          "tasks": [
+            {
+              "id": "civil-work-inverter-foundation-1",
+              "name": "Excavation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-inverter-foundation-2",
+              "name": "PCC",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-inverter-foundation-3",
+              "name": "Bar bending",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-inverter-foundation-4",
+              "name": "Column post foundation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-inverter-foundation-5",
+              "name": "Backfilling",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-inverter-foundation-6",
+              "name": "Beam",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-inverter-foundation-7",
+              "name": "Concrete",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-inverter-foundation-8",
+              "name": "Stairs",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        },
+        {
+          "name": "Transformer foundation",
+          "tasks": [
+            {
+              "id": "civil-work-transformer-foundation-1",
+              "name": "Excavation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-transformer-foundation-2",
+              "name": "PCC",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-transformer-foundation-3",
+              "name": "Bar bending",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-transformer-foundation-4",
+              "name": "Column post foundation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-transformer-foundation-5",
+              "name": "Backfilling",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-transformer-foundation-6",
+              "name": "Beam",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-transformer-foundation-7",
+              "name": "Concrete",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-transformer-foundation-8",
+              "name": "Stairs",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        },
+        {
+          "name": "Equipment foundation",
+          "tasks": [
+            {
+              "id": "civil-work-equipment-foundation-1",
+              "name": "Excavation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-equipment-foundation-2",
+              "name": "PCC",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-equipment-foundation-3",
+              "name": "Bar bending",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-equipment-foundation-4",
+              "name": "Column post foundation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-equipment-foundation-5",
+              "name": "Backfilling",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-equipment-foundation-6",
+              "name": "Beam",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-equipment-foundation-7",
+              "name": "Concrete",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "civil-work-equipment-foundation-8",
+              "name": "Stairs",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DC work",
+      "progress": 52,
+      "tasks": 10,
+      "icon": "bolt",
+      "children": [
+        {
+          "name": "DC installation",
+          "tasks": [
+            {
+              "id": "dc-work-dc-installation-1",
+              "name": "Trench excavation",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-2",
+              "name": "Earthing",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-3",
+              "name": "Sand bedding — lower layer",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-4",
+              "name": "Cable laying",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-5",
+              "name": "Sand bedding — upper layer",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-6",
+              "name": "Brick laying",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-7",
+              "name": "Earthing backfilling",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-8",
+              "name": "String cable line",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-9",
+              "name": "Lightning arrester",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "dc-work-dc-installation-10",
+              "name": "Earth pit",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC work",
+      "progress": 20,
+      "tasks": 6,
+      "icon": "plug",
+      "children": [
+        {
+          "name": "AC installation",
+          "tasks": [
+            {
+              "id": "ac-work-ac-installation-1",
+              "name": "Equipment erection",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "ac-work-ac-installation-2",
+              "name": "Cable laying",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "ac-work-ac-installation-3",
+              "name": "Cable termination",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "ac-work-ac-installation-4",
+              "name": "VOC checking",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "ac-work-ac-installation-5",
+              "name": "Painting",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "ac-work-ac-installation-6",
+              "name": "Testing & commissioning",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MMS & modules",
+      "progress": 62,
+      "tasks": 11,
+      "icon": "solar",
+      "children": [
+        {
+          "name": "Module mounting structure",
+          "tasks": [
+            {
+              "id": "mms-&-modules-module-mounting-structure-1",
+              "name": "Unloading",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-2",
+              "name": "Shifting",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-3",
+              "name": "Rafter",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-4",
+              "name": "Purlin",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-5",
+              "name": "Bracing",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-6",
+              "name": "Cross arm",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-7",
+              "name": "Module mounting",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-8",
+              "name": "Tightening",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-9",
+              "name": "Structure alignment",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-10",
+              "name": "Module alignment",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            },
+            {
+              "id": "mms-&-modules-module-mounting-structure-11",
+              "name": "Final checklist",
+              "mandatory": true,
+              "commentEnabled": true,
+              "photoEnabled": true,
+              "responseTypes": [
+                "yes_no_na",
+                "quantity_unit",
+                "progress",
+                "remarks"
+              ],
+              "acceptanceCriteria": "Client engineering input required"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dailyRecords": [
+    "Work summary",
+    "Manpower / labour hours",
+    "JCB working hours",
+    "Diesel: vehicle, litres, bill, meter",
+    "Materials: aggregates, M-sand, cement, steel, water",
+    "Machinery: tractor with trailer/tanker, JCB, AJAX, DG, welding, cutting, drilling",
+    "Rentals: JCB, Hydra, tractor; hours, rate, amount",
+    "Evidence and comments"
+  ]
+}

@@ -1,0 +1,16 @@
+node_modules/
+.dependency-backup/
+dist/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+infra/cdk.out*/
+infra/cdk.context.json
+aws-outputs.json
+.mongo-binaries/
+infra/bootstrap-review/
+artifacts/
+.local/

@@ -1,0 +1,8 @@
+{
+  "app": "npx tsx app.ts",
+  "context": {
+    "@aws-cdk/core:defaultCrossStackReferences": "strong",
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/aws-ecs:enableImdsBlockingDeprecatedFeature": true
+  }
+}
